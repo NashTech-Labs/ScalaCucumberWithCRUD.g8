@@ -5,7 +5,7 @@ import cassandra.CassandraSessionProvider
 /**
   * Created by knoldus on 6/1/17.
   */
-trait cassandraPersistence extends CassandraSessionProvider{
+trait CassandraPersistence extends CassandraSessionProvider{
 
   def insertUser(userDetail: User): Boolean = {
     try {
@@ -51,5 +51,5 @@ trait cassandraPersistence extends CassandraSessionProvider{
 
 }
 
-class cassandra extends cassandraPersistence
+class Cassandra extends CassandraPersistence
 

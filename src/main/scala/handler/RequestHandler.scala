@@ -1,11 +1,11 @@
 package handler
 
-import persistence.{User, cassandraPersistence}
+import persistence.{User, CassandraPersistence}
 
 /**
   * Created by knoldus on 5/1/17.
   */
-trait RequestHandler extends cassandraPersistence{
+trait RequestHandler extends CassandraPersistence{
 
 
   def createUserHandler(userId: String,gender: String,nickName: String): String = {

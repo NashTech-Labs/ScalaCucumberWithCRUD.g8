@@ -1,7 +1,7 @@
 Feature: CassandraPersistence
   In order to avoid making mistakes
   As a developer
-  I want to insert a user in cassandra
+  I want to basic CRUD operations on cassandra database
 
   Scenario: Insert an user in cassandra database
   Given my cassandra is running

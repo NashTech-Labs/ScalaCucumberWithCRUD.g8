@@ -1,10 +1,10 @@
 package com.spok.apiservice.airthmetic
 
-
-import scala.collection.mutable.{Map => MutableMap}
 import cucumber.api.scala.{EN, ScalaDsl}
 
-class MultiplicationSteps extends ScalaDsl with EN  {
+import scala.collection.mutable.{Map => MutableMap}
+
+class MultiplicationSteps extends ScalaDsl with EN {
 
   val vars = MutableMap[String,Int]()
   var result = 0
@@ -18,4 +18,5 @@ class MultiplicationSteps extends ScalaDsl with EN  {
   Then("""^I get (\d+)$"""){ (expectedResult:Int) =>
     assert(result == expectedResult)
   }
+
 }

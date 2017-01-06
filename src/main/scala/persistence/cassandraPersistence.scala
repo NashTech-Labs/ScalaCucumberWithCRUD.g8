@@ -50,3 +50,6 @@ trait cassandraPersistence extends CassandraSessionProvider{
 
 
 }
+
+class cassandra extends cassandraPersistence
+

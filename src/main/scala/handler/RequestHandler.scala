@@ -36,9 +36,11 @@ trait RequestHandler extends CassandraPersistence{
   def getUserHandler(userId: String): String = {
     val result = getUser(userId)
     result match {
-      case Some(user) =>    "user" + user
+      case Some(user) =>    "user  " + user
       case None =>  "Unable to get User Details"
     }
   }
 
 }
+
+class Handler extends RequestHandler

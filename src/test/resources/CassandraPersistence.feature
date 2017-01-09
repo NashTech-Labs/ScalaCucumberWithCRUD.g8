@@ -53,7 +53,7 @@ Scenario: Get an user from cassandra database
   When I get an user from cassandra
   Then result should be equal to some user details true
 
-Scenario Outline: Update an user in cassandra database
+Scenario Outline: Get an user from cassandra database
   Given a user with userid value <Uid>
   When I get an user from cassandra
   Then result should be equal to some user details <result>

@@ -51,5 +51,5 @@ trait CassandraPersistence extends CassandraSessionProvider{
 
 }
 
-class Cassandra extends CassandraPersistence
+object CassandraPersistence extends CassandraPersistence
 

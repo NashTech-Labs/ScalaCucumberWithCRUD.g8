@@ -1,7 +1,7 @@
 package com.spok.apiservice.airthmetic
 
 import cucumber.api.scala.{EN, ScalaDsl}
-import persistence.{User, Cassandra}
+import persistence.{CassandraPersistence, User}
 
 /**
   * Created by knoldus on 6/1/17.
@@ -10,12 +10,12 @@ class CassandraPersistenceSteps extends ScalaDsl with EN{
 
   var res:Boolean = false
   var userDetails:Option[User] = None
-  var cass: Cassandra = _
+  var cass: CassandraPersistence = _
   var nickName = ""
   var gender = ""
   var userid = ""
   Given("""^my cassandra is running$"""){ () =>
-    cass = new Cassandra
+    cass = CassandraPersistence
   }
   Given("""^a user with nickName value "([^"]*)"$"""){ (arg0:String) =>
     nickName = arg0

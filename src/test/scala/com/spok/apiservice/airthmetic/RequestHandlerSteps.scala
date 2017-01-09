@@ -1,13 +1,15 @@
 package com.spok.apiservice.airthmetic
 
 import cucumber.api.scala.{EN, ScalaDsl}
-import handler.Handler
-import persistence.User
+import handler.{Handler, RequestHandler}
+import org.scalatest.mock.MockitoSugar
+import persistence.{CassandraPersistence, User}
+import org.mockito.Mockito._
 
 /**
   * Created by knoldus on 6/1/17.
   */
-class RequestHandlerSteps extends ScalaDsl with EN {
+class RequestHandlerSteps extends ScalaDsl with EN with MockitoSugar with RequestHandler{
 
   var result: String = ""
   var getResult: String = ""
@@ -16,6 +18,7 @@ class RequestHandlerSteps extends ScalaDsl with EN {
   var nickName = ""
   var gender = ""
   var userid = ""
+  override val cassandraPersistence: CassandraPersistence = mock[CassandraPersistence]
   Given("""^my handler is running$"""){ () =>
     handler = new Handler
   }
@@ -29,15 +32,21 @@ class RequestHandlerSteps extends ScalaDsl with EN {
     userid = arg0
   }
   When("""^At handler I insert an user nickName, gender, userid$"""){ () =>
+    when(cassandraPersistence.insertUser(User(userid,gender,nickName))) thenReturn true
     result = handler.createUserHandler(userid,gender,nickName)
+
+
   }
   When("""^At handler I update an user nickName, gender, userid$""") { () =>
+    when(cassandraPersistence.updateUser(User(userid,gender,nickName))) thenReturn true
     result = handler.updateUserHandler(userid,gender,nickName)
   }
   When("""^At handler I get an user from cassandra$"""){ () =>
+    when(cassandraPersistence.getUser(userid)) thenReturn Some(User(userid,gender,nickName))
     getResult = handler.getUserHandler(userid)
   }
   When("""^At handler I delete an user from cassandra$""") { () =>
+    when(cassandraPersistence.deleteUser(userid)) thenReturn true
     result = handler.deleteHandler(userid)
   }
   Then("""^At handler Create result should be equal to "([^"]*)"$"""){ (arg0:String) =>

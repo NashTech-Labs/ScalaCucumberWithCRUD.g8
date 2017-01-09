@@ -1,15 +1,15 @@
 package handler
 
-import persistence.{User, CassandraPersistence}
+import persistence.{CassandraPersistence, User}
 
 /**
   * Created by knoldus on 5/1/17.
   */
-trait RequestHandler extends CassandraPersistence{
-
+trait RequestHandler {
+  val cassandraPersistence: CassandraPersistence = CassandraPersistence
 
   def createUserHandler(userId: String,gender: String,nickName: String): String = {
-    val createAccount = insertUser(User(userId,gender,nickName))
+    val createAccount = cassandraPersistence.insertUser(User(userId,gender,nickName))
     createAccount match {
       case true =>  "Accounts Created Successfully"
       case false =>  "Unable to create Account"
@@ -18,7 +18,7 @@ trait RequestHandler extends CassandraPersistence{
   }
 
   def updateUserHandler( userId: String,gender: String,nickName: String): String = {
-    val upadeAccount = updateUser(User(userId,gender,nickName))
+    val upadeAccount = cassandraPersistence.updateUser(User(userId,gender,nickName))
     upadeAccount match {
       case true =>  "Accounts Update Successfully"
       case false =>  "Unable  to update Account"
@@ -26,7 +26,7 @@ trait RequestHandler extends CassandraPersistence{
   }
 
   def deleteHandler( userId: String): String = {
-    val createAccount = deleteUser(userId)
+    val createAccount = cassandraPersistence.deleteUser(userId)
     createAccount match {
       case true =>  "Accounts Delete Successfully"
       case false =>   "Unable to Delete Account"
@@ -34,7 +34,7 @@ trait RequestHandler extends CassandraPersistence{
   }
 
   def getUserHandler(userId: String): String = {
-    val result = getUser(userId)
+    val result = cassandraPersistence.getUser(userId)
     result match {
       case Some(user) =>    "user  " + user
       case None =>  "Unable to get User Details"

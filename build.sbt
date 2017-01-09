@@ -14,7 +14,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-testkit" % "10.0.1",
   "org.scalatest" %% "scalatest" % "2.2.6",
   "info.cukes" % "cucumber-junit" % "1.2.4",
-  "info.cukes" % "cucumber-scala_2.11" % "1.2.5"
+  "info.cukes" % "cucumber-scala_2.11" % "1.2.5",
+  "org.mockito" % "mockito-core" % "1.9.5"
 
 )
 enablePlugins(CucumberPlugin)

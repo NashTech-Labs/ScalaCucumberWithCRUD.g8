@@ -20,6 +20,6 @@ libraryDependencies ++= Seq(
 )
 enablePlugins(CucumberPlugin)
 
-CucumberPlugin.glue := "com/spok/apiservice/airthmetic/"
+CucumberPlugin.glue := "allTest"
 
 

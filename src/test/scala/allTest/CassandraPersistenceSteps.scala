@@ -1,4 +1,4 @@
-package com.spok.apiservice.airthmetic
+package allTest
 
 import cucumber.api.scala.{EN, ScalaDsl}
 import persistence.{CassandraPersistence, User}

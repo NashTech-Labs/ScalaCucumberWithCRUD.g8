@@ -20,7 +20,7 @@ object WebServer extends Routes with App with RequestHandler{
     val interface = "localhost"
     val port = 8080
 
-    val binding = Http().bindAndHandle(route, interface, port)
+    val binding = Http().bindAndHandle(allRoute, interface, port)
     Console.println(Console.GREEN +
       """
           ___               _             ___                              _

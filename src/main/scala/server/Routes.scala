@@ -8,7 +8,6 @@ import handler.RequestHandler
   */
 trait Routes extends RequestHandler{
 
-
   case class User(userid: String, gender: String, nickname: String)
 
   def getRequest: Route =
@@ -57,6 +56,6 @@ trait Routes extends RequestHandler{
       }
     }
 
-  def route: Route = getRequest ~ putRequest ~ postRequest ~ deleteRequest
+  def allRoute: Route = getRequest ~ putRequest ~ postRequest ~ deleteRequest
 
 }

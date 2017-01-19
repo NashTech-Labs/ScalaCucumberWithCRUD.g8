@@ -9,7 +9,7 @@
 		extra-sbtVersion="0.13"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170110100844"/>
+		date="20170119131630"/>
 	<dependencies>
 		<module organisation="com.waioeka.sbt" name="cucumber-plugin">
 			<revision name="0.0.9" status="release" pubdate="20170103181201" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lewismj/cucumber" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
@@ -38,7 +38,7 @@
 		<module organisation="info.cukes" name="cucumber-jvm">
 			<revision name="1.2.4" status="release" pubdate="20150723190932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cukes.info/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license"/>
-				<metadata-artifact status="no" details="" size="18445" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-jvm/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-jvm/1.2.4/cucumber-jvm-1.2.4.pom"/>
+				<metadata-artifact status="no" details="" size="18571" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-jvm/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-jvm/1.2.4/cucumber-jvm-1.2.4.pom"/>
 				<caller organisation="com.waioeka.sbt" name="cucumber-plugin" conf="default, compile, runtime, master" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="0.0.9"/>
 				<artifacts>
 				</artifacts>
@@ -46,7 +46,7 @@
 		</module>
 		<module organisation="info.cukes" name="cucumber-scala_2.10">
 			<revision name="1.2.4" status="release" pubdate="20150723191758" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
-				<metadata-artifact status="no" details="" size="20623" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-scala_2.10/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-scala_2.10/1.2.4/cucumber-scala_2.10-1.2.4.pom"/>
+				<metadata-artifact status="no" details="" size="20647" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-scala_2.10/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-scala_2.10/1.2.4/cucumber-scala_2.10-1.2.4.pom"/>
 				<caller organisation="com.waioeka.sbt" name="cucumber-plugin" conf="default, compile, runtime, master" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="0.0.9"/>
 				<artifacts>
 					<artifact name="cucumber-scala_2.10" type="jar" ext="jar" status="no" details="" size="182284" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-scala_2.10/jars/cucumber-scala_2.10-1.2.4.jar">
@@ -57,7 +57,7 @@
 		</module>
 		<module organisation="info.cukes" name="cucumber-junit">
 			<revision name="1.2.4" status="release" pubdate="20150723191128" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
-				<metadata-artifact status="no" details="" size="26147" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-junit/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4.pom"/>
+				<metadata-artifact status="no" details="" size="19991" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-junit/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4.pom"/>
 				<caller organisation="com.waioeka.sbt" name="cucumber-plugin" conf="default, compile, runtime, master" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="0.0.9"/>
 				<artifacts>
 					<artifact name="cucumber-junit" type="jar" ext="jar" status="no" details="" size="18861" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-junit/jars/cucumber-junit-1.2.4.jar">
@@ -68,7 +68,7 @@
 		</module>
 		<module organisation="info.cukes" name="cucumber-core">
 			<revision name="1.2.4" status="release" pubdate="20150723191109" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
-				<metadata-artifact status="no" details="" size="26852" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-core/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.pom"/>
+				<metadata-artifact status="no" details="" size="20696" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-core/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.pom"/>
 				<caller organisation="info.cukes" name="cucumber-junit" conf="compile, runtime" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="1.2.4"/>
 				<caller organisation="info.cukes" name="cucumber-scala_2.10" conf="compile, runtime" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="1.2.4"/>
 				<caller organisation="com.waioeka.sbt" name="cucumber-plugin" conf="default, compile, runtime, master" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="0.0.9"/>
@@ -92,13 +92,13 @@
 			</revision>
 		</module>
 		<module organisation="junit" name="junit">
-			<revision name="4.11" status="release" pubdate="20121115005147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+			<revision name="4.11" status="release" pubdate="20121114142147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
 				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
-				<metadata-artifact status="no" details="" size="2897" time="0" location="/home/knoldus/.ivy2/cache/junit/junit/ivy-4.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom"/>
+				<metadata-artifact status="no" details="" size="2886" time="0" location="/home/knoldus/.ivy2/cache/junit/junit/ivy-4.11.xml" searched="false" origin-is-local="true" origin-location="/home/knoldus/work/sw/activator-dist-1.3.10/repository/junit/junit/4.11/ivys/ivy.xml"/>
 				<caller organisation="info.cukes" name="cucumber-junit" conf="compile, runtime" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="4.11" callerrev="1.2.4"/>
 				<artifacts>
-					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="245039" time="0" location="/home/knoldus/.ivy2/cache/junit/junit/jars/junit-4.11.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.jar"/>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="245039" time="0" location="/home/knoldus/work/sw/activator-dist-1.3.10/repository/junit/junit/4.11/jars/junit.jar">
+						<origin-location is-local="true" location="/home/knoldus/work/sw/activator-dist-1.3.10/repository/junit/junit/4.11/jars/junit.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -119,7 +119,7 @@
 			<revision name="1.0.5" status="release" pubdate="20150707050334" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/cucumber/cucumber-jvm-deps" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="BSD License" url="http://xstream.codehaus.org/license.html"/>
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="3053" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-jvm-deps/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.pom"/>
+				<metadata-artifact status="no" details="" size="3179" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-jvm-deps/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.pom"/>
 				<caller organisation="info.cukes" name="cucumber-core" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.2.4"/>
 				<artifacts>
 					<artifact name="cucumber-jvm-deps" type="jar" ext="jar" status="no" details="" size="603806" time="0" location="/home/knoldus/.ivy2/cache/info.cukes/cucumber-jvm-deps/jars/cucumber-jvm-deps-1.0.5.jar">

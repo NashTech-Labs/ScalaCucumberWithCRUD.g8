@@ -4,7 +4,7 @@
 		module="scalacucumberwithcrud-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170119131630"
+		publication="20170125221007"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

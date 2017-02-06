@@ -5,4 +5,4 @@ Befor running the project, Cassandra Should run on host = '127.0.0.1' and prot =
 
 To run the cucumber test cases.
 
-**$ sbt cucumber**
+**$ sbt run**

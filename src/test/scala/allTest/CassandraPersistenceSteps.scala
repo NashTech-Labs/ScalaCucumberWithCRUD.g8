@@ -3,9 +3,6 @@ package allTest
 import cucumber.api.scala.{EN, ScalaDsl}
 import persistence.{CassandraPersistence, User}
 
-/**
-  * Created by knoldus on 6/1/17.
-  */
 class CassandraPersistenceSteps extends ScalaDsl with EN{
 
   var res:Boolean = false

@@ -1,6 +1,7 @@
 package allTest
 
 import akka.http.scaladsl.testkit.ScalatestRouteTest
+import com.waioeka.sbt.runner.CucumberRunner
 import cucumber.api.scala.{EN, ScalaDsl}
 import org.scalatest.mock.MockitoSugar
 import org.scalatest.{Matchers, WordSpec}
@@ -9,6 +10,9 @@ import server.Routes
 /**
   * Created by knoldus on 6/1/17.
   */
+class CucumberTestSuite extends CucumberRunner
+
+
 class RouteSteps extends WordSpec with ScalaDsl with EN with MockitoSugar with Routes with  Matchers with ScalatestRouteTest {
 
   var result: RouteTestResult = _
